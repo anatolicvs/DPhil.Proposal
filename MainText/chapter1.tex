@@ -52,7 +52,55 @@ new and effective technologies to meet the challenges posed by our changing and 
 Artificial intelligence (AI), which was officially established in the late 1950s by scholars such as Marvin Minsky, is used as a generic name representing a wide variety of
 methods, tools, and techniques that mimic “cognitive” functions or tasks that people
 associate with the human mind, such as “learning,” “planning,” “reasoning,” or “problem solving” ~\cite{Russell:1995}.
+The importance of AI in cyber security is twofold and related to two opposing directions. The first direction focuses on 
+AI-controlled systems as potential targets of cyber attacks, mainly due to their increasing role in controlling vital and complex 
+systems. There are numerous examples of cyber risks related to AI-controlled systems, such as smart vehicles ~\cite{Berger:2013:PLC:2489103.2514809}
+, smart grids and smart cities ~\cite{ALDAIRI20171086}.
 
+\textbf{Knowledge-based systems and machine learning methods} are two well-known classes of AI methods that contain valuable tools
+used in cyber security. In Knowledge-based systems, a huge amount of (experts') Knowledge is uploaded to the computer memory (thus, it is also called expert systems). ~\cite{Felgenbaum:1977:AAI:1622943.1623042}
+The learning part in these systems is based on the reasoning related to this large body of knowledge, which is often obtained  by programmed rules (such as "if-then" and "inference logic rules").
+
+Antivirus and antispam software packages ~\cite{Blanzieri:2008:SLT:1612711.1612715} represent straightforward
+implementations of expert systems in cyber security. In this case, expert knowledge
+(accumulated based on a large amount of transactions) regarding the procedures used—
+such as applied protocols, network traffic (e.g., HTTP, HTTPS, VoIP, or email), and I/O
+interactions with the operating system—is organized systematically to protect the
+users from cyber breaches. There are several papers in this issue that serve as good
+examples of such expert systems ~\cite{Maltinsky:2017:NNM:3055535.3040966} .
+
+
+\textit{Machine-learning methods,} unlike knowledge-based systems, usually refer to applications in which the learning component is performed by the computers “themselves.”
+This is often done by extracting relevant patterns from the data and using them to
+derive predictions and smart recommendations. In other words, machine-learning algorithms are improved “automatically” through experience with the data, while giving
+the computers “the ability to learn without being explicitly programmed,” as suggested
+long before the field of cyber security was formally established ~\cite{Samuel:1959:SML:1661923.1661924}. There
+are many examples of cyber-security tasks that can be addressed by machine learning,
+including user monitoring, spam filtering, zero-day attack identification, risk analysis,
+and many more.
+
+It is well known that machine-learning methods are divided into two main classes
+(and a hybrid class of methods that combines the two). The first class contains unsuper-
+vised learning methods, in which untagged data samples are introduced to the system
+in order to find significant patterns. Fraud detection in financial systems, anomaly
+detection in communication protocols, and segmentation of both users and software
+packages according to their risk potential are good examples of unsupervised machine-
+learning methods that apply techniques, such as anomaly detection and clustering, to
+identify both “positive” or “negative” deviations from the norm. These deviations are
+then mapped into actions that include, for example, risk assessment of new software
+packages, blacklisted websites, or blocking Internet connections with high rates of sus-
+picious users. Two papers published in this issue are introduced in this section, which
+serve as good examples of unsupervised machine-learning methods ~\cite{Maltinsky:2017:NNM:3055535.3040966}
+~\cite{Harel:2017:CSR:3055535.3057729}.
+
+The second class of methods belongs to supervised learning, in which the data samples
+that are introduced to the system are tagged a priori. In other words, the sample data
+inputs are coupled with their desired outputs (thus the term supervised). The goal is to
+learn a general rule that maps inputs to outputs. Some examples from the cyber security
+domain are users’ risk scores [Ben Neria et al. 2017], for which descriptive features
+of users—such as the communication volume, time, and the type of interaction—are
+tagged either as “risky” or “nonrisky” and are then learned by the system to predict
+high-risk users in advance [Gruber and Ben-Gal 2017].
 
 \section{Research Plan}
 
