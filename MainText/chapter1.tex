@@ -88,8 +88,7 @@ packages according to their risk potential are good examples of unsupervised mac
 learning methods that apply techniques, such as anomaly detection and clustering, to
 identify both “positive” or “negative” deviations from the norm. These deviations are
 then mapped into actions that include, for example, risk assessment of new software
-packages, blacklisted websites, or blocking Internet connections with high rates of sus-
-picious users. Two papers published in this issue are introduced in this section, which
+packages, blacklisted websites, or blocking Internet connections with high rates of suspicious users. Two papers published in this issue are introduced in this section, which
 serve as good examples of unsupervised machine-learning methods ~\cite{Maltinsky:2017:NNM:3055535.3040966}
 ~\cite{Harel:2017:CSR:3055535.3057729}.
 
@@ -97,10 +96,46 @@ The second class of methods belongs to supervised learning, in which the data sa
 that are introduced to the system are tagged a priori. In other words, the sample data
 inputs are coupled with their desired outputs (thus the term supervised). The goal is to
 learn a general rule that maps inputs to outputs. Some examples from the cyber security
-domain are users’ risk scores [Ben Neria et al. 2017], for which descriptive features
+domain are users’ risk scores ~\cite{Neria:2017:RFM:3055535.2928274}, for which descriptive features
 of users—such as the communication volume, time, and the type of interaction—are
 tagged either as “risky” or “nonrisky” and are then learned by the system to predict
-high-risk users in advance [Gruber and Ben-Gal 2017].
+high-risk users in advance ~\cite{Gruber:2018:UTB:3195275.3195331}.
+
+
+Within the class of supervised-learning methods (that contain many other tools, such as decision trees, support vector machines, and regression models),
+there is a unique group of artificial neural networks, which are models that were inspired by the structure and functional aspects of biological neural networks in the human brain.
+Layers of nodes ("neurons") are connected to each other via weighted edges that are fine-tuned by mapping inputs
+to tagged outputs.These models are often used to represent complex (nonlinear) relationships between inputs and outputs; 
+they were considered to be very successful  and got another boost recently from the deep-learning revolution.
+
+Deep learning models initially emerged from this subset of methods, consisting of neural
+networks with multiple processing layers. These highly complex models require both
+high-speed processing units and a large amount of data, which became more available
+with the development of big-data technologies and cyber-security techniques. Deep-
+learning models also evolved to address unsupervised learning and were found to be
+extremely successful in signal processing (for which a lot of tagged data exists), specif-
+ically in image processing, which supports computer vision, and in speech recognition
+[He et al. 2016; Hinton et al. 2012], for which it has the primary task of identifying the
+user and providing the user with the correct authorization level. These models gained
+quite a bit of attention recently when leading global companies decided to invest 
+significantly in these models in order to develop new applications; examples include Apple
+(e.g., Siri), Alphabet/Google (e.g., self-driving cars), and Facebook (automated image
+processing). These models have been shown to generate excellent results with specific
+tasks, yet this performance is not always guaranteed, especially in noncontinuity cases
+[Schmidhuber 2015]. Moreover, these models are not as descriptive as other analytic
+models, such as closed-form regression models, decision trees, or graphical networks.
+Therefore, their outputs pose challenges in terms of their interpretation or intuitive
+understanding by cyber security analysts (that play a vital role in cyber defense)
+[Ganesan et al. 2017] and by other decision makers (e.g., the Chief Information Officer)
+in cyber security. Thus, deep learning is a subset of machine learning, which is a central
+branch of AI. Deep learning should be viewed as an important tool in the cyber security
+toolkit, specifically when the analytic tasks involved require modeling a large amount
+of data by complex, often nonlinear, relations between the system’s input and output.
+To summarize, we believe that the role of intelligent systems in cyber security will
+continue to grow, while the development of these systems, like any other scientific
+development, poses both negative and positive effects on cyber security.
+
+
 
 \section{Research Plan}
 
