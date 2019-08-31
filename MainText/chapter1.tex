@@ -80,8 +80,7 @@ including user monitoring, spam filtering, zero-day attack identification, risk 
 and many more.
 
 It is well known that machine-learning methods are divided into two main classes
-(and a hybrid class of methods that combines the two). The first class contains unsuper-
-vised learning methods, in which untagged data samples are introduced to the system
+(and a hybrid class of methods that combines the two). The first class contains unsupervised learning methods, in which untagged data samples are introduced to the system
 in order to find significant patterns. Fraud detection in financial systems, anomaly
 detection in communication protocols, and segmentation of both users and software
 packages according to their risk potential are good examples of unsupervised machine-
@@ -151,7 +150,7 @@ They have mainly described Denial of Service attack and Denial of Sleep attack i
 Liu et al. ~\cite{LiuLLY18} proposed a detector for On and Off attack by a malicious network node in industrial IoT site. 
 By On and Off attack they meant that IoT network could be attacked by a malicious node when it is in an active state or On state. 
 Further- more, the IoT network behaves normal when its malicious node is in the inactive or off state. 
-The system was developed using a light probe routing mechanism with the calculation of trust estimation of each neighbor node for the detection of an anomaly. 
+The system was developed using a light probe routing mechanism with the calculation of trust estimation of each neighbour node for the detection of an anomaly. 
 Diro et al. ~\cite{DIRO2018761} discussed the detection of attack using fog-to-things architecture. 
 The authors of the paper gave a comparison study of a deep and a shallow neural network using open source dataset. 
 This work’s primary focus was to detect four classes of attack and anomaly. 
@@ -165,59 +164,133 @@ For the anomaly detection in healthcare; IoT sensors, medical image analysis, bi
 Pajouh et al. ~\cite{Pajouh7762123} presented a model for intrusion detection based on a two-layer dimension reduction and two-tier classification module. 
 This model was also designed to identify malicious activities such as User to Root (U2R) and Remote to Local (R2L) attacks. For dimension reduction, 
 component analysis and linear discriminate analysis have been used. NSL-KDD dataset was used to carry out the whole experiment. 
-For detecting suspicious behaviors with the two-tier classification module, Naive Bayes and Certainty Factor version of K-Nearest Neighbor were applied. 
-D’Angelo et al. [15] applied Uncertainty-managing Batch Relevance-based Artificial Intelligence (U-BRAIN) on binary NSL-KDD dataset and 
+For detecting suspicious behaviours with the two-tier classification module, Naive Bayes and Certainty Factor version of K-Nearest Neighbour were applied. 
+D’Angelo et al. ~\cite{DANGELO2015408}  applied Uncertainty-managing Batch Relevance-based Artificial Intelligence (U-BRAIN) on binary NSL-KDD dataset and 
 Real Traffic Data (from Fredrico II University of Napoli). The U-Brain is a dynamic model operated on multiple machines which can handle missing data. 
-The NSL-KDD dataset contains 41 features. From 41 features 6 features
+The NSL-KDD dataset contains 41 features. From 41 features 6 features.
 
+\section{How organizations are benefiting from AI In cybersecurity}
 
+\begin{itemize}
+   \item {
+      \textbf{AI lowers the cost to detect and respond to breaches:} Using AI for cybersecurity enables organizations to understand and reuse 
+      threat patterns to identify new threats. This leads to an overall reduction in time and effort to identify incidents, investigate them, and remediate threats.
+      Close to two-thirds of executives (64\%) say that AI lowers the cost to detect and respond to breaches. The reduction in cost for a majority of organizations ranges from 1\% – 15\% (with an average of 12\%). 
+      However, a few organizations have managed to achieve even higher cost reductions (more than 15\%) leading to higher benefits (see \ref{fig-cost-to-detect-and-respond-to-breaches}).
+      }
+\end{itemize}
+
+\begin{figure}[h]
+   \center
+   \includegraphics[width=.6\textwidth]{chap1/cost-to-detect-and-respond-to-breaches} 
+   \caption{AI in cybersecurity lowers the cost to detect and respond to breaches ~\cite{Capgemini2019}.}
+   \label{fig-cost-to-detect-and-respond-to-breaches}
+\end{figure}
+
+\begin{itemize}
+   \item {
+      \textbf{AI makes organizations faster at responding to breaches:}
+      Fast response is essential to securing an organization from cyber attacks. With AI, the overall time taken to detect threats and breaches is reduced by up to 12\%. 
+      AI also reduces the time taken to remediate a breach or implement patches in response to an attack by 12\%. A small subset of organizations even managed to reduce these time metrics by greater than 15\%
+      zPower, a leading rechargeable battery manufacturer, partnered with a startup to use AI to detect and autonomously respond to threats as they emerge. Just weeks after the solution was deployed, 
+      the security team was alerted to the fact that an employee had downloaded potentially malicious software. They were able to remove the threat and head off any attack in real time ~\cite{Darktrace2017}.
+      (see ~\ref{fig-responding-to-breaches} \footnote{Source: Capgemini Research Institute, AI in Cybersecurity executive survey, $N$ $=$ $850$ executives})
+      }
+\end{itemize}
+
+\begin{figure}[h]
+   \center
+   \includegraphics[width=.6\textwidth]{chap1/responding-to-breaches} 
+   \caption{Nearly three in four executives say AI in cybersecurity enables a faster response to breaches
+   Enables ~\cite{Capgemini2019}.}
+   \label{fig-responding-to-breaches}
+\end{figure}
+
+\begin{itemize}
+   \item {
+      \textbf{AI results in higher efficiency for cyber analysts:} Cyber analysts spend considerable time going through data logs and/or incident timesheets. With AI helping carry that workload, cyber analysts can spend more quality time analyzing the incidents identified by the AI cybersecurity algorithms.
+   }
+\end{itemize}
+
+\begin{figure}[ht]
+   \center
+   \includegraphics[width=.5\textwidth]{chap1/accuracy-of-detecting-breaches} 
+   \caption{AI can help organizations provide a higher accuracy of detecting breaches
+   Provides ~\cite{Capgemini2019}.}
+   \label{fig-accuracy-of-detecting-breaches}
+\end{figure}
+
+\begin{itemize}
+   \item {
+      \textbf{AI results in new revenue streams through cybersecurity offerings:}
+      With the proliferation of smart products – electronic devices generally connected wirelessly to other devices or networks – the attack surface for hackers increases. This creates an opportunity – offering cybersecurity services to manufacturers that sell smart products. A number of organizations are already targeting this opportunity:
+          \begin{itemize}
+             \item {
+               \textbf{GE’s} Digital Ghost technology offers an AI-enabled protective layer for industrial control systems. Digital Ghost leverages the digital twins (which are often referred to as the brains of the associated control systems) to gain knowledge of the machine’s working pattern. Digital Ghost detects if the machine, while appearing to operate normally, 
+               is actually being influenced by cyber attacks ~\cite{GEResearch2019}.
+             }
+             \item {
+               Similarly, \textbf{Siemens’} ‘Industry Anomaly Detection’ solution uses AI to detect anomalies, either via intrusion or data theft by hackers. The solution analyzes data traffic in the network in a learning phase to establish transparency 
+               of every device connected to the network. It can then identify any vulnerabilities while providing continuous monitoring to detect anomalies. ~\cite{Siemens20118}
+             }
+          \end{itemize}  
+      }
+\end{itemize}
 
 \section{Research Plan}
 
- As an aims of the research and We provided a concrete plan for completion of the research including the design and methods. 
+ As an aims of the research and We provided a concrete plan for completion of the research including the design and 
+ methods.
+
+\begin{figure}[ht]
+   \center
+   \includegraphics[width=.6\textwidth]{chap1/sec-framework-fig.png} 
+   \caption{Overall framework for attack and anomaly detection in IoT and Cloud Base Services.}
+   \label{fig-example}
+\end{figure}
 
 \begin{itemize}
-    \item {
-        Analyzing previous AI solutions which is developed for cybersecurity and figure out the deficiencies of the application. 
-     }
-    
-     \item{
-        Investigating "exploit databases" and collecting data related the kind of the threats.  
-     }
-     \item {
-        Analyzing Cloud Based Systems' network infrastructures for collecting data. 
-     }
-    
-     \item {
-        Researching common and recent threats for the computer networks.
-     }
-
-     \item {
-        Investigating the literature of the machine learning algorithms. 
+   \item {
+       Analyzing previous AI solutions which is developed for cybersecurity and figure out the deficiencies of the application. 
+    }
+   
+    \item{
+       Investigating "exploit databases" and collecting data related the kind of the threats.  
     }
     \item {
-        Analyzing the vulnerabilities of the cloud systems.   
+       Analyzing Cloud Based Systems' network infrastructures for collecting data. 
     }
-
-     \item {
-        Defining the constraints of the problem.
-     }
-
-     \item {
-        Modeling the problem. 
-     }
-     \item {
-        Creating the fittest machine learning models for AI application 
-     }
-     \item {
-        Developing the AI application that can detect, repair and defense the cloud based systems to against the cyber threats and attacks.
-     }
+   
     \item {
-        Creating real-world test environment and creating real-time cyber-attacks scenarios for test the developed AI supported security applications.
+       Researching common and recent threats for the computer networks.
     }
 
     \item {
-        Regarding the test results of the application, optimize the AI algorithms with heuristic and metaheuristic approaches.  
+       Investigating the literature of the machine learning algorithms. 
+   }
+   \item {
+       Analyzing the vulnerabilities of the cloud systems.   
+   }
+
+    \item {
+       Defining the constraints of the problem.
     }
 
-\end{itemize} 
+    \item {
+       Modeling the problem. 
+    }
+    \item {
+       Creating the fittest machine learning models for AI application 
+    }
+    \item {
+       Developing the AI application that can detect, repair and defense the cloud based systems to against the cyber threats and attacks.
+    }
+   \item {
+       Creating real-world test environment and creating real-time cyber-attacks scenarios for test the developed AI supported security applications.
+   }
+
+   \item {
+       Regarding the test results of the application, optimize the AI algorithms with heuristic and metaheuristic approaches.  
+   }
+
+\end{itemize}
